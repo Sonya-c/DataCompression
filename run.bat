@@ -20,6 +20,3 @@ echo Original size %sizeBiblia% compressed %sizeCompressed% decompressed %sizedD
 set /A "diffOriginal=sizeBiblia - sizedDecompressed"
 echo compression rate .... >> g%groupid%.txt
 echo Sized diff between original and decompressed %diffOriginal% >> g%groupid%.txt
-
-copy /Y g%groupid%.txt ..
-cd ..
