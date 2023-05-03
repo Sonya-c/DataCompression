@@ -20,12 +20,12 @@ def decompress(compressed_file, decompressed_file, freq_map, padding_length, byt
             current_node = current_node.right
 
         if current_node.char is not None:
-            decoded_content.append(current_node.char)
+            decoded_content.append(current_node.char.encode('utf-8'))
             current_node = root
 
     # Write decoded content
-    with open(decompressed_file, "w") as file:
-        file.write("".join(decoded_content))
+    with open(decompressed_file, "wb") as file:
+        file.write(b''.join(decoded_content))
 
 
 if __name__ == "__main__":

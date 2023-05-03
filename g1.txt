@@ -1,0 +1,8 @@
+Compression time: 1.49 seconds
+Original file size: 4217909 bytes
+Compressed file size: 2378965 bytes
+Decompression time: 3.83 seconds
+Verification result: ok
+Original size 4217909 compressed 2378965 decompressed 4217909
+compression rate ....
+Sized diff between original and decompressed 0
