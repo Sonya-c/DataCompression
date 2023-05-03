@@ -2,12 +2,12 @@ import sys
 
 def verify(original_file, decompressed_file):
     # Read original file
-    with open(original_file, "r") as file:
-        original_content = file.read()
+    with open(original_file, 'rb') as file:
+        original_content = file.read().decode('ISO-8859-1')
 
     # Read decompressed file
-    with open(decompressed_file, "r") as file:
-        decompressed_content = file.read()
+    with open(decompressed_file, 'rb') as file:
+        decompressed_content = file.read().decode('ISO-8859-1')
 
     # Verify that the original and decompressed contents are the same
     return "ok" if original_content == decompressed_content else "nok"

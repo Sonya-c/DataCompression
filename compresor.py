@@ -49,7 +49,7 @@ def build_code_map(node, current_code, code_map):
 def compress(original_file, compressed_file):
     # Read input file
     with open(original_file, 'rb') as file:
-        content = file.read().decode('utf-8')
+        content = file.read().decode('ISO-8859-1')
 
     # Build frequency map
     freq_map = {}

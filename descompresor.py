@@ -20,7 +20,7 @@ def decompress(compressed_file, decompressed_file, freq_map, padding_length, byt
             current_node = current_node.right
 
         if current_node.char is not None:
-            decoded_content.append(current_node.char.encode('utf-8'))
+            decoded_content.append(current_node.char.encode('ISO-8859-1'))
             current_node = root
 
     # Write decoded content
